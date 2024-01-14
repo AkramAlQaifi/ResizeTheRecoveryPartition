@@ -1,0 +1,55 @@
+﻿<Window x:Class="ResizeTheRecoveryPartition.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ResizeTheRecoveryPartition"
+        mc:Ignorable="d"
+        Title="Resize The Recovery Partition" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ComboBox x:Name="diskComboBox" SelectionChanged="diskComboBox_SelectionChanged" Margin="94,74,10,0" VerticalAlignment="Top">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Disk " Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding DiskId}" Margin="0,0,5,0"/>
+
+                        <TextBlock Text="{Binding Status}" Margin="0,0,5,0"/>
+
+                        <TextBlock Text=" Size: " Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding Size}" Margin="0,0,5,0"/>
+
+                        <!--<TextBlock Text="{Binding Free}" Margin="0,0,5,0"/>-->
+
+                        <TextBlock Text=" Recovery Size: "/>
+                        <TextBlock Text="{Binding RecoverySize}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBox x:Name="outputTextBox" Text="" TextWrapping="Wrap" Margin="10,139,10,50"/>
+        <Button x:Name="RunButton" Content="Run" Margin="10,0,10,10" Click="RunButton_Click" Height="35" VerticalAlignment="Bottom"/>
+        <ComboBox x:Name="partitionInfoComboBox" Margin="94,109,10,0" VerticalAlignment="Top" IsEnabled="False">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Partition Number " Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding PartitionNumber}" Margin="0,0,5,0"/>
+
+                        <TextBlock Text=" Type: " Margin="0,0,5,0"/>
+                        <TextBlock Text="{Binding Type}" Margin="0,0,5,0"/>
+
+                        <TextBlock Text=" Size: "/>
+                        <TextBlock Text="{Binding Size}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <TextBlock Text="Select Disk" HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Text="Select Partition" HorizontalAlignment="Left" Margin="10,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Text="This program is only compatible with GPT partitions." Margin="10,25,10,0" TextWrapping="Wrap"  VerticalAlignment="Top" FontSize="18" Foreground="#FFAD1717" FontWeight="Bold" Height="29" TextAlignment="Center"/>
+
+
+
+    </Grid>
+</Window>
