@@ -3,9 +3,15 @@
 > [!NOTE]  
 > **This software is only compatible with GPT partition.**
 
-This program will help you fix the error: `0x80070643 - ERROR_INSTALL_FAILURE`
-That happened in the update:
-`KB5034441: Windows Recovery Environment update for Windows 10, version 21H2 and 22H2: January 9, 2024`
+---
+
+Update issue: `KB5034441: Windows Recovery Environment update for Windows 10, version 21H2 and 22H2: January 9, 2024`
+
+If you are getting 0x80070643 error code in your Windows 10 device and you are unable to install KB5034441 update in your device or unable to log into the Desktop, this application will help you in fixing the issue.
+
+![image](https://github.com/AkramAlQaifi/ResizeTheRecoveryPartition/assets/80940602/3dd9da9c-9ea1-4c0e-a428-e11ccd17980e)
+
+---
 
 Microsoft said that this update requires 250 MB of free space in the recovery partition
 
@@ -15,6 +21,8 @@ Microsoft said that this update requires 250 MB of free space in the recovery pa
 >To avoid this error or recover from this failure, please follow the Instructions to manually resize your partition to install the WinRE update and then try installing this update.
 
 ---
+![image](https://github.com/AkramAlQaifi/ResizeTheRecoveryPartition/assets/80940602/27ffea82-83d4-4114-8797-36a4fae99b61)
+
 ## How to work
 
 1. Open ResizeTheRecoveryPartition Application
@@ -35,6 +43,7 @@ Microsoft said that this update requires 250 MB of free space in the recovery pa
 
 **Fix 0x80070643 - Error Install Failure when trying to install Windows Update** [**Article**](https://www.ghacks.net/2024/01/10/fix-0x80070643-error-install-failure-when-trying-to-install-windows-update/)
 
+**Fix 0x80070643 Error Code from KB5034441 Update in Windows 10** [**Article**](https://www.askvg.com/fix-0x80070643-error-code-from-kb5034441-update-in-windows-10/)
 
 ---
 
