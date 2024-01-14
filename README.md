@@ -21,7 +21,7 @@ Microsoft said that this update requires 250 MB of free space in the recovery pa
 >To avoid this error or recover from this failure, please follow the Instructions to manually resize your partition to install the WinRE update and then try installing this update.
 
 ---
-![image](https://github.com/AkramAlQaifi/ResizeTheRecoveryPartition/assets/80940602/27ffea82-83d4-4114-8797-36a4fae99b61)
+![Capture](https://github.com/AkramAlQaifi/ResizeTheRecoveryPartition/assets/80940602/4b5d6119-4009-4066-977f-6df99a9d2cae)
 
 ## How to work
 
